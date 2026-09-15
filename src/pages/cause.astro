@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CampaignCard from "../components/CampaignCard.astro";
+import classImage from "../assets/class.jpeg";
+import bloodDonation from "../assets/blood-donation.jpeg";
+import plantImage from "../assets/plant.jpeg";
 ---
 
 <BaseLayout title="Causes - Vasudhaiva Kulam">
@@ -60,8 +63,8 @@ import CampaignCard from "../components/CampaignCard.astro";
       <CampaignCard
         cardClass="glass-card"
         cardStyle=""
-        imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuAkG4xiI1DatZvEyj4WoTZoxEccVASXfadaolLxqdI4K2Sw55Opyg_FCzRbr55v75iYrlo04ox2HZE2mOwTGurtkPqb8mnRJASCMOWZpRpKEH-lkHzvVcF3fJW1J_hmA7GTIZGbUSUtgRwGjbgM2imIRS59lMYlDdZrXRUSIHaV7oszgOGfldrTKHxNfDJ7hqsG76Phx9-1o2D3XNOoUPOgoQKdkfmEvfpi_IpwFDBz_52gi2NiH08e"
-        imageAlt="A brightly lit classroom in a rural Indian village. Children in neat uniforms are sitting at desks, looking attentively at a blackboard. The mood is hopeful and focused, with warm sunlight streaming through a window. The style is authentic documentary photography with vibrant natural colors, emphasizing the pristine white and saffron accents in the room."
+        imageSrc={classImage.src}
+        imageAlt="An open classroom in an Indian slum."
         categoryIcon="school"
         categoryName="Education"
         badgeTextClass="text-tertiary"
@@ -76,8 +79,8 @@ import CampaignCard from "../components/CampaignCard.astro";
 
       <!-- Card 2: Environment -->
       <CampaignCard
-        imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuBcIeU_8s1Y5FZn9j7Wsc0l87m4R9pqkg7e33Unot9aX7H5ebQXtYV7nDr5hzrtudBM-4xxzW39-wv35n6e-snp1t-oOCkblZN15gzY33YSK0muOPuwxag2mCLwHX6RzaYvNPh7VMEsY_gUwKD_fiwl9Cnv2gEsjzATk4zTh6yWSeuz8NUwlSgWZdvtz_seQKjffdlqwMEQyFbj96HcAejpuCpnV5tKWl1wvJWKiI6ZTf94wofSu52F"
-        imageAlt="A community tree planting drive in a suburban Indian area. Volunteers of various ages are kneeling in rich brown soil, planting green saplings. The lighting is bright and cheerful midday sun. The visual style is high-resolution, energetic, and optimistic, highlighting the deep green leaves and the pristine white shirts of some volunteers."
+        imageSrc={plantImage.src}
+        imageAlt="Volunteers during a plantation drive."
         categoryIcon="park"
         categoryName="Environment"
         badgeTextClass="text-secondary"
@@ -92,8 +95,8 @@ import CampaignCard from "../components/CampaignCard.astro";
 
       <!-- Card 3: Welfare -->
       <CampaignCard
-        imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NgBNO9oxA7YNVJVx2JUHRG5cI6TpTubDLBJM9XS3LQ7SW6KT9ubSfNINXUXMB6RfJpKvYWkIcd_BfFaDlHdgJW9UQtD6GRJdXpy1xZRWPvmljPLO2ghFS28TyAODF_o8t6s90q6VtK1pnnA_9QzPXtutA7A_Iw2outeIyB1B4AW_jBaLF17e_KXKwsGDI6J1amZIxP01Mv-hiBH6wvRAcUymEXd051WnFpAdT6PQuoHV_R9HSlde"
-        imageAlt="A clean, organized blood donation camp setting. Medical staff in crisp white coats are attending to donors resting on comfortable chairs. The environment feels safe, sterile, yet warm and welcoming with soft indoor lighting. The aesthetic uses clinical whites mixed with subtle saffron and navy accents from banners in the background."
+        imageSrc={bloodDonation.src}
+        imageAlt="Volunteer donationg blood."
         categoryIcon="bloodtype"
         categoryName="Welfare"
         badgeTextClass="text-error"
