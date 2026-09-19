@@ -26,7 +26,7 @@ export const causes: Cause[] = [
     title: 'Open the door to opportunity.',
     titleHindi: 'अवसरों के द्वार खोलें।',
     intro: 'Quality learning becomes more powerful when a child also has the resources, guidance, and encouragement to keep going. Our education work focuses on practical support and long-term mentorship for underprivileged youth.',
-    heroImage: '/images/causes/education-hero.jpg',
+    heroImage: '../src/assets/class.jpeg',
     accent: 'saffron',
     focus: [
       { label: 'School readiness', hindi: 'विद्यालय तैयारी', copy: 'Books, supplies, and everyday learning essentials that help children participate fully in school.' },
@@ -54,7 +54,7 @@ export const causes: Cause[] = [
     title: 'Make essential care easier to reach.',
     titleHindi: 'ज़रूरी स्वास्थ्य सेवा को सुलभ बनाएं।',
     intro: 'Health support begins with reliable community action. Our health initiative centres on periodic blood donation drives and practical support that can connect local communities with urgent needs.',
-    heroImage: '/images/causes/health-hero.jpg',
+    heroImage: '../src/assets/blood-donation.jpeg',
     accent: 'green',
     focus: [
       { label: 'Blood donation', hindi: 'रक्तदान', copy: 'Community blood donation drives that help strengthen local blood availability.' },
@@ -82,7 +82,7 @@ export const causes: Cause[] = [
     title: 'Meet everyday needs with dignity.',
     titleHindi: 'सम्मान के साथ रोज़मर्रा की ज़रूरतें पूरी करें।',
     intro: 'Small essentials can make a meaningful difference when they reach people at the right time. Our welfare work provides practical support through community-led distribution of food, blankets, lights, and other basic facilities.',
-    heroImage: '/images/causes/community-welfare-hero.jpg',
+    heroImage: '../src/assets/blanket.jpeg',
     accent: 'navy',
     focus: [
       { label: 'Basic essentials', hindi: 'मूलभूत आवश्यकताएँ', copy: 'Support shaped around practical needs such as food, warmth, lighting, and daily essentials.' },
@@ -110,7 +110,7 @@ export const causes: Cause[] = [
     title: 'Care for the places we all call home.',
     titleHindi: 'उन स्थानों की रक्षा करें जिन्हें हम सब घर कहते हैं।',
     intro: 'Environmental stewardship is community work. Our focus brings people together around sustainable living, afforestation, and water conservation so local action can strengthen the places we share.',
-    heroImage: '/images/causes/environment-hero.jpg',
+    heroImage: '../src/assets/plant.jpeg',
     accent: 'green',
     focus: [
       { label: 'Afforestation', hindi: 'वनीकरण', copy: 'Plant and care for trees through community-driven plantation activities.' },
