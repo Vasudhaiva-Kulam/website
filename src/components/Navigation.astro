@@ -7,20 +7,26 @@ const navLinks = [
   { href: "/", desktopLabel: "Home", mobileLabel: "Home", icon: "home" },
   {
     href: "/cause",
-    desktopLabel: "Causes",
-    mobileLabel: "Causes",
+    desktopLabel: "Our Causes",
+    mobileLabel: "Our Causes",
     icon: "volunteer_activism",
   },
   {
     href: "/about",
     desktopLabel: "About Us",
-    mobileLabel: "Impact",
+    mobileLabel: "About Us",
     icon: "analytics",
   },
   {
     href: "/join",
-    desktopLabel: "Contact",
-    mobileLabel: "Contact",
+    desktopLabel: "Join Us",
+    mobileLabel: "Join Us",
+    icon: "mail",
+  },
+  {
+    href: "/contact",
+    desktopLabel: "Contact Us",
+    mobileLabel: "Contact Us",
     icon: "mail",
   },
 ];
@@ -41,12 +47,14 @@ const isActive = (href: string) => {
   >
     <!-- Brand -->
     <div class="flex items-center gap-3">
-      <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-      <span
-        class="font-display text-title-sm font-semibold text-on-surface dark:text-inverse-on-surface"
-      >
-        Vasudhaiva Kulam
-      </span>
+      <a href="/">
+        <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
+        <span
+          class="font-display text-title-sm font-semibold text-on-surface dark:text-inverse-on-surface"
+        >
+          Vasudhaiva Kulam
+        </span>
+      </a>
     </div>
 
     <!-- Links -->
@@ -77,11 +85,13 @@ const isActive = (href: string) => {
       >
         EN | HI
       </button>
-      <button
-        class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold shadow hover:shadow-lg hover:-translate-y-0.5 transition-all"
-      >
-        Donate (दान करें)
-      </button>
+      <a href="/donate">
+        <button
+          class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold shadow hover:shadow-lg hover:-translate-y-0.5 transition-all"
+        >
+          Donate (दान करें)
+        </button>
+      </a>
     </div>
   </div>
 </nav>
@@ -92,9 +102,11 @@ const isActive = (href: string) => {
   <header
     class="flex items-center justify-between p-4 bg-surface sticky top-0 z-40 border-b border-outline-variant shadow-sm"
   >
-    <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-    <span class="font-display text-title-sm font-semibold text-primary"
-      >Vasudhaiva Kulam</span
+    <a href="/">
+      <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
+      <span class="font-display text-title-sm font-semibold text-primary"
+        >Vasudhaiva Kulam</span
+      ></a
     >
     <button class="p-2 text-on-surface" id="menuBtn">
       <span class="material-symbols-outlined">menu</span>
@@ -161,11 +173,13 @@ const isActive = (href: string) => {
         <span class="material-symbols-outlined text-sm">language</span>
         <span>Hindi Toggle</span>
       </button>
-      <button
-        class="bg-primary-container text-on-primary-container w-full py-3 rounded-full font-bold text-center shadow"
-      >
-        Donate Now
-      </button>
+      <a href="/donate">
+        <button
+          class="bg-primary-container text-on-primary-container w-full py-3 rounded-full font-bold text-center shadow"
+        >
+          Donate Now
+        </button>
+      </a>
     </div>
   </nav>
 </div>

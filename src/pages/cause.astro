@@ -75,6 +75,7 @@ import plantImage from "../assets/plant.jpeg";
         progressGoal="Goal: ₹100,000"
         progressPercentage={50}
         buttonText="Donate Now"
+        href="/donate"
       />
 
       <!-- Card 2: Environment -->
@@ -91,6 +92,7 @@ import plantImage from "../assets/plant.jpeg";
         progressGoal="Goal: 10,000"
         progressPercentage={65}
         buttonText="Join Drive"
+        href="/join"
       />
 
       <!-- Card 3: Welfare -->
@@ -107,6 +109,7 @@ import plantImage from "../assets/plant.jpeg";
         progressGoal="Goal: 150"
         progressPercentage={53}
         buttonText="Register"
+        href="/join"
       />
     </section>
 
@@ -130,11 +133,13 @@ import plantImage from "../assets/plant.jpeg";
           most urgent needs across all our causes.
         </p>
       </div>
-      <button
-        class="font-sans text-label-caps font-semibold uppercase tracking-wider py-4 px-8 rounded-full hover:shadow-lg hover:bg-primary transition-all whitespace-nowrap relative z-10 shadow-md transform hover:-translate-y-1 bg-primary-container text-on-primary"
-      >
-        Donate to General Fund (सामान्य कोष में दान करें)
-      </button>
+      <a href="/donate">
+        <button
+          class="font-sans text-label-caps font-semibold uppercase tracking-wider py-4 px-8 rounded-full hover:shadow-lg hover:bg-primary transition-all whitespace-nowrap relative z-10 shadow-md transform hover:-translate-y-1 bg-primary-container text-on-primary"
+        >
+          Donate to General Fund (सामान्य कोष में दान करें)
+        </button>
+      </a>
     </section>
   </main>
 </BaseLayout>
