@@ -14,6 +14,7 @@ export interface Props {
   buttonText: string;
   cardClass?: string;
   cardStyle?: string;
+  href: string;
 }
 
 const {
@@ -31,6 +32,7 @@ const {
   buttonText,
   cardClass = "bg-surface-container-lowest",
   cardStyle = "box-shadow: 0 4px 12px rgba(0, 0, 128, 0.05);",
+  href,
 } = Astro.props;
 ---
 
@@ -93,12 +95,16 @@ const {
         </div>
       </div>
 
-      <button
-        class="w-full mt-4 bg-surface border border-outline-variant text-primary font-sans text-label-caps font-semibold uppercase tracking-wider py-3 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex justify-center items-center gap-2 group-hover:shadow-md"
-      >
-        {buttonText}
-        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
-      </button>
+      <a href={href}>
+        <button
+          class="w-full mt-4 bg-surface border border-outline-variant text-primary font-sans text-label-caps font-semibold uppercase tracking-wider py-3 rounded-lg hover:bg-primary hover:text-on-primary transition-all flex justify-center items-center gap-2 group-hover:shadow-md"
+        >
+          {buttonText}
+          <span class="material-symbols-outlined text-[18px]"
+            >arrow_forward</span
+          >
+        </button>
+      </a>
     </div>
   </div>
 </article>
