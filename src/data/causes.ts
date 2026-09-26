@@ -10,7 +10,7 @@ export type Cause = {
   heroImage: string;
   accent: string;
   focus: { label: string; hindi: string; copy: string }[];
-  programs: { title: string; hindi: string; copy: string; action: string }[];
+  programs: { title: string; hindi: string; copy: string; action: string; url: string }[];
   ways: { title: string; copy: string }[];
   ctaTitle: string;
   ctaCopy: string;
@@ -34,8 +34,8 @@ export const causes: Cause[] = [
       { label: 'Continuity', hindi: 'निरंतरता', copy: 'Support designed to help children stay engaged with learning as their needs change.' },
     ],
     programs: [
-      { title: "Sponsor a Child's Education", hindi: 'एक बच्चे की शिक्षा प्रायोजित करें', copy: 'Support school supplies, tutoring, and the everyday costs that can stand between a child and consistent learning.', action: 'Sponsor education' },
-      { title: 'Volunteer as a Mentor', hindi: 'मार्गदर्शक के रूप में जुड़ें', copy: 'Share time, subject knowledge, or encouragement with learners who benefit from an additional caring adult.', action: 'Volunteer' },
+      { title: "Sponsor a Child's Education", hindi: 'एक बच्चे की शिक्षा प्रायोजित करें', copy: 'Support school supplies, tutoring, and the everyday costs that can stand between a child and consistent learning.', action: 'Sponsor education', url: '/donate' },
+      { title: 'Volunteer as a Mentor', hindi: 'मार्गदर्शक के रूप में जुड़ें', copy: 'Share time, subject knowledge, or encouragement with learners who benefit from an additional caring adult.', action: 'Volunteer', url: '/join' },
     ],
     ways: [
       { title: 'Give toward a child', copy: 'A focused contribution can be directed toward the education support a child needs.' },
@@ -62,8 +62,8 @@ export const causes: Cause[] = [
       { label: 'Community care', hindi: 'सामुदायिक देखभाल', copy: 'Health action becomes stronger when residents, volunteers, and local institutions work together.' },
     ],
     programs: [
-      { title: 'Monthly Blood Donation Camp', hindi: 'मासिक रक्तदान शिविर', copy: 'Join a recurring community blood donation camp organised with a focus on safety, hygiene, and local need.', action: 'Register to donate' },
-      { title: 'Volunteer at a Health Drive', hindi: 'स्वास्थ्य अभियान में स्वयंसेवक बनें', copy: 'Help welcome participants, coordinate logistics, and make the experience clear and supportive.', action: 'Volunteer' },
+      { title: 'Monthly Blood Donation Camp', hindi: 'मासिक रक्तदान शिविर', copy: 'Help a recurring community blood donation camp organised with a focus on safety, hygiene, and local need.', action: 'Donate', url: '/donate' },
+      { title: 'Volunteer at a Health Drive', hindi: 'स्वास्थ्य अभियान में स्वयंसेवक बनें', copy: 'Help welcome participants, coordinate logistics, and make the experience clear and supportive.', action: 'Volunteer', url: '/join' },
     ],
     ways: [
       { title: 'Donate blood', copy: 'A single appointment can contribute to a local community blood drive.' },
@@ -90,8 +90,8 @@ export const causes: Cause[] = [
       { label: 'Human dignity', hindi: 'मानवीय गरिमा', copy: 'Make support respectful, direct, and easy for people to receive.' },
     ],
     programs: [
-      { title: 'Essential Supplies Drive', hindi: 'आवश्यक वस्तु अभियान', copy: 'Help collect and distribute useful supplies to families and individuals who need them.', action: 'Support the drive' },
-      { title: 'Community Distribution', hindi: 'सामुदायिक वितरण', copy: 'Volunteer in local distribution activities, from packing to on-ground coordination.', action: 'Join as a volunteer' },
+      { title: 'Essential Supplies Drive', hindi: 'आवश्यक वस्तु अभियान', copy: 'Help collect and distribute useful supplies to families and individuals who need them.', action: 'Support the drive', url: '/join' },
+      { title: 'Community Distribution', hindi: 'सामुदायिक वितरण', copy: 'Volunteer in local distribution activities, from packing to on-ground coordination.', action: 'Join as a volunteer', url: '/join' },
     ],
     ways: [
       { title: 'Fund essentials', copy: 'Help cover practical items that can be distributed where they are needed.' },
@@ -118,8 +118,8 @@ export const causes: Cause[] = [
       { label: 'Sustainable living', hindi: 'सतत जीवन', copy: 'Encourage everyday choices that reduce waste and strengthen long-term environmental care.' },
     ],
     programs: [
-      { title: 'Green Earth Plantation Drive', hindi: 'हरित पृथ्वी वृक्षारोपण अभियान', copy: 'Join a community plantation effort and help care for greener local spaces.', action: 'Join the drive' },
-      { title: 'Water Conservation Action', hindi: 'जल संरक्षण पहल', copy: 'Support awareness and practical conservation activities that make water stewardship visible in everyday life.', action: 'Get involved' },
+      { title: 'Green Earth Plantation Drive', hindi: 'हरित पृथ्वी वृक्षारोपण अभियान', copy: 'Join a community plantation effort and help care for greener local spaces.', action: 'Join the drive', url: '/join' },
+      { title: 'Water Conservation Action', hindi: 'जल संरक्षण पहल', copy: 'Support awareness and practical conservation activities that make water stewardship visible in everyday life.', action: 'Get involved', url: '/join' },
     ],
     ways: [
       { title: 'Plant and care', copy: 'Join a plantation activity and help look after new trees beyond planting day.' },

@@ -91,7 +91,7 @@ const siteName = "Vasudhaiva Kulam";
                   <p class="card-hindi">{program.hindi}</p>
                   <p>{program.copy}</p>
                 </div>
-                <a class="text-link" href="/join/">
+                <a class="text-link" href={program.url}>
                   {program.action} <span>→</span>
                 </a>
               </article>
@@ -139,7 +139,7 @@ const siteName = "Vasudhaiva Kulam";
             <p>{cause.ctaCopy}</p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-primary" href="/join/"
+            <a class="btn btn-primary" href="/donate/"
               >Donate <span>(दान करें)</span></a
             >
             <a class="btn btn-light" href="/join/">Volunteer</a>
