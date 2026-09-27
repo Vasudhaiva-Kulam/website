@@ -98,13 +98,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         institutional inquiries.
       </p>
     </div>
-    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <form
+      class="grid grid-cols-1 md:grid-cols-2 gap-6"
+      action="https://formspree.io/f/xjykpjqw"
+      method="POST"
+    >
       <div>
         <input
           class="input-minimal w-full font-sans text-body-md text-on-surface"
           placeholder="Organization Name"
           required=""
           type="text"
+          name="Organization Name"
         />
       </div>
       <div>
@@ -113,6 +118,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           placeholder="Contact Person"
           required=""
           type="text"
+          name="Contact Person"
         />
       </div>
       <div>
@@ -121,11 +127,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           placeholder="Corporate Email"
           required=""
           type="email"
+          name="Corporate Email"
         />
       </div>
       <div>
         <select
           class="input-minimal w-full font-sans text-body-md text-on-surface-variant appearance-none cursor-pointer bg-transparent"
+          name="Partnership Type"
         >
           <option disabled="" selected="" value="">Partnership Type</option>
           <option value="csr">CSR Funding</option>
@@ -137,7 +145,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="md:col-span-2 mt-4 text-center">
         <button
           class="border-2 border-primary text-primary font-display text-title-sm font-semibold px-8 py-3 rounded-lg hover:bg-primary-container hover:border-primary-container hover:text-on-primary-container transition-all"
-          type="button">Request Partnership Pack</button
+          type="submit">Request Partnership Pack</button
         >
       </div>
     </form>
