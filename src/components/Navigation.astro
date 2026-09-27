@@ -1,5 +1,6 @@
 ---
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
+import name from "../assets/name.png";
 const base = import.meta.env.BASE_URL.replace(/\/$/, ""); // normalize: no trailing slash, ever
 const currentPath = Astro.url.pathname; // already includes base — don't add it again for comparison
 
@@ -47,13 +48,9 @@ const isActive = (href: string) => {
   >
     <!-- Brand -->
     <div class="flex items-center gap-3">
-      <a href="/">
+      <a href="/" class="flex items-center">
         <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-        <span
-          class="font-display text-title-sm font-semibold text-on-surface dark:text-inverse-on-surface"
-        >
-          Vasudhaiva Kulam
-        </span>
+        <img src={name.src} class="h-10" />
       </a>
     </div>
 
@@ -97,11 +94,9 @@ const isActive = (href: string) => {
   <header
     class="flex items-center justify-between p-4 bg-surface sticky top-0 z-40 border-b border-outline-variant shadow-sm"
   >
-    <a href="/">
+    <a href="/" class="flex items-center">
       <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-      <span class="font-display text-title-sm font-semibold text-primary"
-        >Vasudhaiva Kulam</span
-      ></a
+      <img src={name.src} class="h-10" /></a
     >
     <button class="p-2 text-on-surface" id="menuBtn">
       <span class="material-symbols-outlined">menu</span>
@@ -126,9 +121,7 @@ const isActive = (href: string) => {
     >
       <div>
         <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-        <h2 class="font-display text-headline-md text-primary">
-          Vasudhaiva Kulam
-        </h2>
+        <img src={name.src} class="h-10" />
         <p class="text-sm text-on-surface-variant">Global Kinship</p>
       </div>
       <button class="p-2 text-on-surface-variant" id="closeDrawer">
