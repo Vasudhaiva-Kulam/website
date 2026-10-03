@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Suraj from "../assets/suraj.jpeg";
 import Adarsh from "../assets/adarsh.jpeg";
 import Team from "../assets/team-2.jpeg";
+import Riya from "../assets/riya.jpeg";
 ---
 
 <BaseLayout title="About Vasudhaiva Kulam">
@@ -144,18 +145,20 @@ import Team from "../assets/team-2.jpeg";
     >
       <div class="text-center mb-12">
         <h2 class="font-display text-headline-md text-primary mb-2">
-          The People Behind the Mission
+          The Main People Behind the Mission
         </h2>
-        <p class="font-sans text-body-lg text-on-surface-variant">हमारी टीम</p>
+        <p class="font-sans text-body-lg text-on-surface-variant">
+          हमारे मुख्य सदस्य
+        </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Team Member 1 -->
         <div
           class="group bg-surface rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,128,0.05)] border border-outline-variant/20 hover:shadow-lg transition-all duration-300"
         >
           <img
             alt="Adarsh Dwivedi"
-            class="w-full h-150 object-cover object-top"
+            class="w-full h-72 object-cover object-top"
             src={Adarsh.src}
           />
           <div
@@ -169,11 +172,11 @@ import Team from "../assets/team-2.jpeg";
             <p class="font-sans text-body-md text-on-surface-variant mb-4">
               Founder &amp; Director (संस्थापक)
             </p>
-            <p
-              class="font-sans text-body-md text-on-surface-variant text-sm line-clamp-3"
-            >
-              Mr. Dwivedi leads our strategic vision, ensuring our educational
-              programs remain impactful.
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Mr. Dwivedi shapes Vasudhaiva Kulam's vision and growth by leading
+              strategic planning and educational initiatives focused on
+              inclusive learning, community empowerment, and lasting social
+              change.
             </p>
           </div>
         </div>
@@ -183,7 +186,7 @@ import Team from "../assets/team-2.jpeg";
         >
           <img
             alt="Suraj Pandey"
-            class="w-full h-150 object-cover object-top"
+            class="w-full h-72 object-cover object-top"
             src={Suraj.src}
           />
           <div
@@ -195,19 +198,41 @@ import Team from "../assets/team-2.jpeg";
               Mr. Suraj Pandey
             </h3>
             <p class="font-sans text-body-md text-on-surface-variant mb-4">
-              Co-founder
+              Co-founder (सह संस्थापक)
             </p>
-            <p
-              class="font-sans text-body-md text-on-surface-variant text-sm line-clamp-3"
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Mr. Suraj Pandey strengthens Vasudhaiva Kulam's organizational
+              backbone by coordinating volunteers, interns, and city teams
+              through empathetic leadership, strategic vision, and effective
+              collaboration.
+            </p>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div
+          class="group bg-surface rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,128,0.05)] border border-outline-variant/20 hover:shadow-lg transition-all duration-300"
+        >
+          <img
+            alt="Riya Singh"
+            class="w-full h-72 object-cover object-top"
+            src={Riya.src}
+          />
+          <div
+            class="p-6 border-l-4 border-secondary/0 group-hover:border-secondary transition-all"
+          >
+            <h3
+              class="font-display text-title-sm font-semibold text-on-surface mb-1"
             >
-              Mr. Suraj Pandey plays a pivotal role in building and
-              strengthening the organizational backbone of Vasudhaiva Kulam. As
-              Co-Founder, he leads coordination among volunteers, interns, and
-              core teams across cities, ensuring smooth operations and effective
-              collaboration. His empathetic leadership, strategic vision, and
-              strong organizational skills inspire a motivated, united, and
-              mission-driven team dedicated to creating meaningful social
-              impact.
+              Miss Riya Singh
+            </h3>
+            <p class="font-sans text-body-md text-on-surface-variant mb-4">
+              Manager (प्रबंधक)
+            </p>
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Riya manages Vasudhaiva Kulam's day-to-day operations by
+              coordinating team members, supporting initiatives, and fostering
+              effective collaboration through proactive communication and
+              dedicated teamwork.
             </p>
           </div>
         </div>
