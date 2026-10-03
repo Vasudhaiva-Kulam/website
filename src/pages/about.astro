@@ -1,5 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Suraj from "../assets/suraj.jpeg";
+import Adarsh from "../assets/adarsh.jpeg";
+import Team from "../assets/team-2.jpeg";
+import Riya from "../assets/riya.jpeg";
 ---
 
 <BaseLayout title="About Vasudhaiva Kulam">
@@ -29,7 +33,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
         <!-- Genesis Story -->
         <div
-          class="md:col-span-7 bg-surface rounded-xl p-8 border border-outline-variant/30 shadow-[0_4px_12px_rgba(0,0,128,0.05)]"
+          class="md:col-span-5 bg-surface rounded-xl p-8 border border-outline-variant/30 shadow-[0_4px_12px_rgba(0,0,128,0.05)]"
         >
           <div class="flex items-center gap-3 mb-6">
             <span
@@ -49,43 +53,70 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             class="prose max-w-none text-on-surface-variant font-sans text-body-md space-y-4"
           >
             <p>
-              Founded in 2015 by a group of passionate educators and social
-              workers in rural Rajasthan, Vasudhaiva Kulam began with a simple
-              belief: every child deserves access to quality education,
-              regardless of their socio-economic background.
+              Founded in 2024 by Adarsh bhaiya and Suraj bhaiya in Lucknow,
+              Vasudhaiva Kulam began with a simple belief: every person deserves
+              access to basic necessities, quality education, quality
+              healthcare, and clean environment, regardless of their
+              socio-economic background.
             </p>
             <p>
-              What started as a small evening learning center under a banyan
-              tree has now blossomed into a comprehensive NGO supporting
-              thousands of families across three states, providing holistic
-              development programs that bridge traditional wisdom with modern
-              opportunities.
+              What started as a small distribution of candles and sweets on the
+              occasion of Diwali has now blossomed into a comprehensive NGO
+              working for multiple causes.
             </p>
           </div>
           <img
             class="w-full h-64 object-cover rounded-lg mt-6 shadow-sm"
-            alt="A group of Indian children sitting in a circle under a large, ancient Banyan tree, engaged in an outdoor learning session. The lighting is warm golden hour sunlight filtering through the leaves, creating a hopeful, community-focused, and vibrant modern aesthetic consistent with a professional NGO brand."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTEZRHKuHBvPAJZP2UWW1pp3F4n0b2koRTSZOOpNnYha67RYAQ1ZHmJpjw8laTCE5cNgcwbkKAcOzL77l3wq6RICD9XNErDbFkIbp4TrCOmhjYtHzOrGk2gGe6QCmgMG0nUyPIR8aiXK1utuYWHYU_bYeaFHMYgRBuX5Z9feUG6OpJPVDF60Zdv4bMSlrGqt14r4OYmobZOxsG3HgVHEHWjO-CvShmsiuK0Bov_js06MgrrRjcnJ_S"
+            alt="A group of Indian adults standing in a semi-circle facing the camera."
+            src={Team.src}
           />
         </div>
         <!-- Mission Statement -->
-        <div class="md:col-span-5 flex flex-col gap-8">
+        <div class="md:col-span-7 flex flex-col gap-8">
           <div
-            class="bg-primary/5 rounded-xl p-8 border-l-4 border-primary h-full flex flex-col justify-center shadow-[0_4px_12px_rgba(0,0,128,0.05)]"
+            class="bg-primary/5 rounded-xl p-8 border-l-4 border-primary h-full flex flex-col gap-8 shadow-[0_4px_12px_rgba(0,0,128,0.05)]"
           >
-            <div class="flex items-center gap-3 mb-4">
-              <span
-                class="material-symbols-outlined text-primary text-3xl"
-                data-icon="track_changes"
-                data-weight="fill"
-                style="font-variation-settings: 'FILL' 1;">track_changes</span
-              >
-              <h2 class="font-display text-headline-md text-on-surface">
-                Our Mission <span
-                  class="text-on-surface-variant font-normal text-xl ml-2"
-                  >हमारा लक्ष्य</span
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span
+                  class="material-symbols-outlined text-primary text-3xl"
+                  data-icon="track_changes"
+                  data-weight="fill"
+                  style="font-variation-settings: 'FILL' 1;">track_changes</span
                 >
-              </h2>
+                <h2 class="font-display text-headline-md text-on-surface">
+                  Our Mission <span
+                    class="text-on-surface-variant font-normal text-xl ml-2"
+                    >हमारा लक्ष्य</span
+                  >
+                </h2>
+              </div>
+              <div class="mt-auto space-y-3">
+                <div
+                  class="flex items-center gap-3 text-on-surface font-sans text-body-md"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    data-icon="check_circle">check_circle</span
+                  > Accessible Education (सुलभ शिक्षा)
+                </div>
+                <div
+                  class="flex items-center gap-3 text-on-surface font-sans text-body-md"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    data-icon="check_circle">check_circle</span
+                  > Accessible Healthcare (सुलभ स्वास्थ्य सेवा)
+                </div>
+                <div
+                  class="flex items-center gap-3 text-on-surface font-sans text-body-md"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    data-icon="check_circle">check_circle</span
+                  > Clean Environment (स्वच्छ पर्यावरण)
+                </div>
+              </div>
             </div>
             <p
               class="font-sans text-body-lg text-on-surface-variant italic mb-6"
@@ -104,32 +135,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
               है। <br /><br />
               साभार.. <br />वसुधैव कुलम्।।"
             </p>
-            <div class="mt-auto space-y-3">
-              <div
-                class="flex items-center gap-3 text-on-surface font-sans text-body-md"
-              >
-                <span
-                  class="material-symbols-outlined text-secondary"
-                  data-icon="check_circle">check_circle</span
-                > Accessible Education (सुलभ शिक्षा)
-              </div>
-              <div
-                class="flex items-center gap-3 text-on-surface font-sans text-body-md"
-              >
-                <span
-                  class="material-symbols-outlined text-secondary"
-                  data-icon="check_circle">check_circle</span
-                > Accessible Healthcare (सुलभ स्वास्थ्य सेवा)
-              </div>
-              <div
-                class="flex items-center gap-3 text-on-surface font-sans text-body-md"
-              >
-                <span
-                  class="material-symbols-outlined text-secondary"
-                  data-icon="check_circle">check_circle</span
-                > Clean Environment (स्वच्छ पर्यावरण)
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -140,9 +145,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     >
       <div class="text-center mb-12">
         <h2 class="font-display text-headline-md text-primary mb-2">
-          The People Behind the Mission
+          The Main People Behind the Mission
         </h2>
-        <p class="font-sans text-body-lg text-on-surface-variant">हमारी टीम</p>
+        <p class="font-sans text-body-lg text-on-surface-variant">
+          हमारे मुख्य सदस्य
+        </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Team Member 1 -->
@@ -150,10 +157,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           class="group bg-surface rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,128,0.05)] border border-outline-variant/20 hover:shadow-lg transition-all duration-300"
         >
           <img
-            alt="Anjali Sharma"
+            alt="Adarsh Dwivedi"
             class="w-full h-72 object-cover object-top"
-            data-alt="A professional, warm, high-resolution portrait of a middle-aged Indian woman wearing a subtle, elegant saree, smiling gently towards the camera. The background is slightly blurred but suggests a vibrant, modern office or community center setting. The lighting is soft and flattering, highlighting her approachable and dedicated demeanor."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuClNIF3_AG1FcbNaBM0pRquhR_7WnC8i3DF_ZwE1Hs-IDT9fEYJMpqTPax0FOZkgz1a6ejGMtf7A4lJYpWQ6ZkAWdjYNDZ0VVhzsrKUMJ5G5qRXSwcMW8EUljK5xK3Qa6g5pIxMBt03sqeSWsg38ezNju-V_smU-xxCvJX1A79I_JACV8piNGvPkba2EXYPaK8--FULHOGby6_-rTtK8SaItRHUMkaqD_hqdbtPtSxL_HPEDdsyWVGK"
+            src={Adarsh.src}
           />
           <div
             class="p-6 border-l-4 border-secondary/0 group-hover:border-secondary transition-all"
@@ -161,17 +167,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h3
               class="font-display text-title-sm font-semibold text-on-surface mb-1"
             >
-              Dr. Anjali Sharma
+              Mr. Adarsh Dwivedi
             </h3>
             <p class="font-sans text-body-md text-on-surface-variant mb-4">
               Founder &amp; Director (संस्थापक)
             </p>
-            <p
-              class="font-sans text-body-md text-on-surface-variant text-sm line-clamp-3"
-            >
-              With over 20 years in rural development, Dr. Sharma leads our
-              strategic vision, ensuring our educational programs remain
-              impactful and culturally relevant.
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Mr. Dwivedi shapes Vasudhaiva Kulam's vision and growth by leading
+              strategic planning and educational initiatives focused on
+              inclusive learning, community empowerment, and lasting social
+              change.
             </p>
           </div>
         </div>
@@ -180,10 +185,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           class="group bg-surface rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,128,0.05)] border border-outline-variant/20 hover:shadow-lg transition-all duration-300"
         >
           <img
-            alt="Vikram Singh"
+            alt="Suraj Pandey"
             class="w-full h-72 object-cover object-top"
-            data-alt="A professional, warm, high-resolution portrait of a young Indian man in a smart casual button-down shirt, standing outdoors with a confident, welcoming smile. The background features a subtle hint of rural landscape or a school building, out of focus. Bright, natural lighting conveys transparency and energy."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjM-HtUz-ZqBc_EsV3rVbCKSrLY-5TWG3SfGlCzVgEQBK1r3Cun83rPtI1ssLuooSdq4wKTewd_9B_CDsevEx7XJXfNROO8cAYtYaICCbmk7klSEDEtxcs5tDtDybN_BqXErTahyJJdpHhBjaEANDD6MDfJz6BkdYfj1W-mo76v8vQzQvm_07k23cuZ264m6ORhbXcB1yj7jS2my03y_R_0uFb0f5q2X1tZ8XYwK3AqzDitjg_afXD"
+            src={Suraj.src}
           />
           <div
             class="p-6 border-l-4 border-secondary/0 group-hover:border-secondary transition-all"
@@ -191,17 +195,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h3
               class="font-display text-title-sm font-semibold text-on-surface mb-1"
             >
-              Vikram Singh
+              Mr. Suraj Pandey
             </h3>
             <p class="font-sans text-body-md text-on-surface-variant mb-4">
-              Head of Operations (संचालन प्रमुख)
+              Co-founder (सह संस्थापक)
             </p>
-            <p
-              class="font-sans text-body-md text-on-surface-variant text-sm line-clamp-3"
-            >
-              Vikram oversees the daily execution of our grassroots initiatives,
-              managing a dedicated network of volunteers across diverse
-              communities.
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Mr. Suraj Pandey strengthens Vasudhaiva Kulam's organizational
+              backbone by coordinating volunteers, interns, and city teams
+              through empathetic leadership, strategic vision, and effective
+              collaboration.
             </p>
           </div>
         </div>
@@ -210,10 +213,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           class="group bg-surface rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,128,0.05)] border border-outline-variant/20 hover:shadow-lg transition-all duration-300"
         >
           <img
-            alt="Ramesh Patel"
+            alt="Riya Singh"
             class="w-full h-72 object-cover object-top"
-            data-alt="A professional, warm, high-resolution portrait of a senior Indian man with a white beard, wearing traditional kurta, offering a wise and gentle expression. He is seated in a well-lit, modest library or study space. The mood is respectful, grounded, and deeply tied to cultural heritage."
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3GRQfHa6F1BBp3MXU9GERmRlFOQzV3uJEnEv9wfPfpQ9NQOsPY6m5XLYsCEqaZH9zfqbvgcwbTZKBOtukRIeyxi-01WeJBkavKKe-1Du42qn3UmYKJ-g_LYl-uTeQbUQh4JaN-kUELmDObdhFOujuxi5NcDpaoLHoXJPIEs9-k6xj34TWv7Nz7BCnIlKGSmKIW-KBp6Xbah6Pl97oNNhsqGGg8Dyjy8E7kN9xbMPvWjEtI8QFicli"
+            src={Riya.src}
           />
           <div
             class="p-6 border-l-4 border-secondary/0 group-hover:border-secondary transition-all"
@@ -221,28 +223,27 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <h3
               class="font-display text-title-sm font-semibold text-on-surface mb-1"
             >
-              Ramesh Patel
+              Miss Riya Singh
             </h3>
             <p class="font-sans text-body-md text-on-surface-variant mb-4">
-              Community Liaison (सामुदायिक संपर्क)
+              Manager (प्रबंधक)
             </p>
-            <p
-              class="font-sans text-body-md text-on-surface-variant text-sm line-clamp-3"
-            >
-              Ramesh bridges the gap between our modern educational approaches
-              and local traditions, fostering deep trust within the villages we
-              serve.
+            <p class="font-sans text-body-md text-on-surface-variant text-sm">
+              Riya manages Vasudhaiva Kulam's day-to-day operations by
+              coordinating team members, supporting initiatives, and fostering
+              effective collaboration through proactive communication and
+              dedicated teamwork.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <!-- Documentation Section (Glassmorphism inspired card) -->
-    <section class="py-section-gap px-gutter max-w-container-max mx-auto mb-16">
+    <!-- TODO: Documentation Section (Glassmorphism inspired card) -->
+    <!-- <section class="py-section-gap px-gutter max-w-container-max mx-auto mb-16">
       <div
         class="bg-surface-container-high/50 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-outline-variant/50 shadow-sm relative overflow-hidden"
       >
-        <!-- Decorative Element -->
+        <!-- Decorative Element
         <div
           class="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl z-0"
         >
@@ -327,6 +328,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
   </main>
 </BaseLayout>
