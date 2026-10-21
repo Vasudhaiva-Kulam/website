@@ -1,6 +1,7 @@
 ---
 import FooterLink from "./FooterLink.astro";
 import logo from "../assets/logo.svg";
+import name from "../assets/name.svg";
 ---
 
 <footer
@@ -11,10 +12,10 @@ import logo from "../assets/logo.svg";
   >
     <div class="flex flex-col gap-4 max-w-xs">
       <div
-        class="font-display text-title-sm font-semibold text-primary flex items-center gap-2"
+        class="font-display text-title-sm font-semibold text-primary flex items-center"
       >
-        <img src={logo.src} alt="Vasudhaiva Kulam" class="h-10" />
-        Vasudhaiva Kulam
+        <img src={logo.src} alt="logo" class="h-10" />
+        <img src={name.src} alt="Vasudhaiva Kulam" class="h-10" />
       </div>
       <p class="text-sm opacity-80">
         Global Kinship. Empowering communities through collective action and
